@@ -16,7 +16,7 @@ sudo pacman -Syu
 #yes | sudo pacman -S vim
 #sudo pacman -S terminator
 
-for package in "pacman"; do
-	yes | sudo pacman -S --noconfirm "$package"
+for package in "${packages[@]}"; do
+	yes | sudo pacman -S --noconfirm --needed "$package"
 done
 
