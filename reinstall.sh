@@ -5,7 +5,7 @@
 # The purpose of this program is to reinstall all my normally used terminal applications onto a new instance of Manjaro
 
 #Variable declarations
-packages=("vim" "terminator" "git" "code" "python" "nodejs" "docker")
+packages=("vim" "terminator" "git" "code" "python" "nodejs" "docker" "make")
 
 #Description
 yes | sudo pacman -Syu
