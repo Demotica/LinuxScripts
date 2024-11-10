@@ -8,9 +8,7 @@
 packages=("vim" "terminator" "git" "code" "python" "nodejs" "docker")
 
 #Description
-sudo pacman -Syu
-#yes | sudo pacman -S vim
-#sudo pacman -S terminator
+yes | sudo pacman -Syu
 
 for package in "${packages[@]}"; do
 	yes | sudo pacman -S --noconfirm --needed "$package"
